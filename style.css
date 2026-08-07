@@ -1,12 +1,12 @@
 
 :root{
-    --main-color: bisque;
-    --sec-color: #261e1d;
-    --dark-neutral: #261e1d;
-    --light-neutral: beige;
-    --transparent-bisque: rgba(255, 229, 203, 0.216);
-    --hover-dark: #362f2a;
-    --my-image:""
+    --main-color: #F3DEC9;
+    --sec-color: #1A1919;
+    --dark-neutral: #0D0C0C;
+    --light-neutral: #EAE5E1;
+    --transparent-bisque: rgba(243, 222, 201, 0.15);
+    --hover-dark: #2E2B2B;
+    --my-image:url('svg/image5.jpeg')
 }
 *{
     margin: 0;
@@ -359,18 +359,21 @@ section{
     justify-content: space-around;
     align-items: center;
     display: flex;
-    padding: 10px;
+    padding: 10px 20px;
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: var(--sec-color);
 }
 .project-one img {
-    width: 60%;
-    height: 100%;
-    border-radius: 10px;
+    width: 50%;
+    height: 85%;
+    flex: 1;
+    border: 2px solid var(--main-color);
+    border-radius: 12px;
 }
 .project-one .project-data {
-    width: 50%;
+    width: auto;
+    flex: 1;
     height: 100%;
     padding: 10px;
     align-items: center;
@@ -380,6 +383,8 @@ section{
     font-size: 20px;
     text-align: justify;
     letter-spacing: 0.8px;
+    /* line-height: 105%; */
+    line-height: 27px;
     word-spacing: 2px;
 }
 .project-data h4{
@@ -464,7 +469,6 @@ section{
 
 #Contact .form-input, textarea{
     font-size: 16px;
-    /* padding-left: 10px; */
     padding: 10px;
     resize: none;
     margin-bottom: 10px;
@@ -826,6 +830,8 @@ li{
 }
 .project-data p{
     font-size: 16px;
+    line-height: 100%;
+    word-spacing: 0%;
 }
 /* ----- contact form responsive ----------  */
 
